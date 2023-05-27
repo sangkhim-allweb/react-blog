@@ -9,7 +9,7 @@ const Create = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = {title, body, author};
+        const blog = {title, body};
 
         fetch('http://localhost:8080/blogs', {
             method: 'POST',
