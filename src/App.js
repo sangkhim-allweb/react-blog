@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Home from './pages/Home';
 import Create from './pages/Create';
 import BlogDetails from './pages/BlogDetails';
+import Mui from "./pages/Mui";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                         <Route path="/" element={<Home/>}/>
                         <Route path="/create" element={<Create/>}/>
                         <Route path="/blogs/:id" element={<BlogDetails/>}/>
+                        <Route path="/mui" element={<Mui/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
                 </div>

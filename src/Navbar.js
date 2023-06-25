@@ -13,6 +13,9 @@ const Navbar = () => {
                 <Link to="/create" className={`${location.pathname == '/create' ? 'menu-selected' : ''}`}>
                     New Blog
                 </Link>
+                <Link to="/mui" className={`${location.pathname == '/mui' ? 'menu-selected' : ''}`}>
+                    MUI
+                </Link>
             </div>
         </nav>
     );
