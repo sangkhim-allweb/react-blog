@@ -7,22 +7,22 @@ import Mui from "./pages/Mui";
 import NotFound from "./pages/NotFound";
 
 function App() {
-    return (
-        <div className="App">
-            <BrowserRouter>
-                <Navbar/>
-                <div className="content">
-                    <Routes>
-                        <Route path="/" element={<Home/>}/>
-                        <Route path="/create" element={<Create/>}/>
-                        <Route path="/blogs/:id" element={<BlogDetails/>}/>
-                        <Route path="/mui" element={<Mui/>}/>
-                        <Route path="*" element={<NotFound/>}/>
-                    </Routes>
-                </div>
-            </BrowserRouter>
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Navbar/>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/create" element={<Create/>}/>
+            <Route path="/blogs/:id" element={<BlogDetails/>}/>
+            <Route path="/mui" element={<Mui/>}/>
+            <Route path="*" element={<NotFound/>}/>
+          </Routes>
         </div>
-    );
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
